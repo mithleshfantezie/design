@@ -1,0 +1,424 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+    /* outline: 1px dashed grey; */
+  }
+
+  p {
+      margin: 0 ;
+      padding: 0;
+  }
+
+  body {
+    font-family: 'Times New Roman', Times, serif;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  
+  ._cont {
+    background: #EDEDED url("../assets/drawing.svg") no-repeat;
+    width: 1600px;
+    height: 1194px;
+    background-position: bottom;
+    margin:auto;
+
+  }
+
+  ._cont ._box {
+    margin: 5rem 10rem 30rem 10rem;
+    text-align: center;
+  }
+
+  ._cname {
+    font-size: 3.5rem;
+    font-weight: 600;
+ 
+    font-family: 'Arial';
+  }
+  
+
+  ._cont ._heading h1 {
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 7rem;
+      margin: 0 0 0 0;
+    
+  }
+
+  ._cont ._heading p {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 2rem; 
+
+}
+
+._cont ._info {
+    padding: 1.5rem 0;
+}
+
+._cont ._info p {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    color:#322f2f; 
+}
+
+._cont ._name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 8rem;
+}
+
+._cont ._description {
+    margin: 1rem auto;   
+}
+
+._cont ._description p {
+    font-family: 'Arial';
+    font-size: 2rem;
+}
+
+
+
+._cont ._bottom {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+._cont ._bottom  ._ribbon {
+    height: 200px;
+    width: 200px;
+    margin: 0 25px;
+    background: url('../assets/ribbon2.svg') no-repeat;
+    background-position: center center !important;   
+    
+}
+
+._ribbon-svg {
+    height: inherit;
+    width: inherit;
+}
+
+._cont ._bottom {
+    margin-top: 2rem;
+}
+
+._cont ._bottom ._date-box, ._cont ._bottom ._signature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+._cont ._bottom ._date-box ._item, ._cont ._bottom ._signature-box ._item {
+    padding: 7px 0;
+    font-size: 2.5rem;
+
+}
+
+._cont ._bottom ._date-box ._date, ._cont ._bottom ._signature-box ._signature {
+    width: 200px;
+    padding: 10px 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top: 1px solid black;
+}
+
+
+/* @media screen  and ( min-height: 768px ) {
+   
+
+    ._cont ._box {
+        padding: 100px 15px;
+      }
+
+      ._cont {
+        background: #EDEDED url("._._/assets/background-xl._svg") no-repeat;
+        background-position: bottom;
+      }
+
+      ._cont ._description {
+        margin: 30px auto;   
+    }
+
+    ._cont ._bottom {
+        margin: 35px 0;
+    }
+
+}
+
+@media screen and (max-width: 725px ) {
+
+    ._cont ._box {
+        padding: 10px 20px;
+      }
+
+    ._cont ._description {
+        width: 100%;
+        text-align: justify;
+      
+    }
+
+    ._cont ._bottom ._date-box ._item, ._cont ._bottom ._signature-box ._item {
+        font-size: 23px;
+ 
+    }
+    
+    ._cont ._bottom ._date-box ._date, ._cont ._bottom ._signature-box ._signature {
+        font-size: 23px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 660px) {
+   
+      ._cont ._heading h1 {
+          font-size: 43px;
+          margin-top: 20px;
+        
+      }
+    
+      ._cont ._heading p {
+        font-size: 20px;
+  
+    }
+       
+    ._cont ._name {
+        font-size: 60px;
+    }
+    
+    
+    
+    ._cont ._description p {
+        font-size: 17._5px;
+        padding: 0 15px;
+    }
+    
+    ._cont ._bottom  ._ribbon {
+        height: 175px;
+        width: 175px;
+    }
+   
+
+    ._cont ._bottom ._date-box ._item, ._cont ._bottom ._signature-box ._item {
+        font-size: 20px;
+ 
+    }
+    
+    ._cont ._bottom ._date-box ._date, ._cont ._bottom ._signature-box ._signature {
+        font-size: 20px;
+        letter-spacing: 3px;
+        width: 135px;
+    }
+  
+}
+
+
+@media screen and (max-width: 490px) {
+
+    ._cont {
+        background: #EDEDED url("._._/assets/background-sm._svg") no-repeat;
+        background-position: bottom;
+      }
+   
+    ._cont ._heading h1 {
+        font-size: 38px;
+        margin-top: 20px;
+     
+    }
+  
+    ._cont ._heading p {
+      font-size: 19px;
+
+
+  }
+     
+  ._cont ._name {
+      font-size: 50px;
+  }
+  
+  
+  
+  ._cont ._description p {
+      font-size: 17px;
+      padding: 0 15px;
+  }
+  
+  ._cont ._bottom  ._ribbon {
+      height: 150px;
+      width: 150px;
+      padding: 0 10px;
+  }
+
+  ._ribbon-svg {
+    height: 150px;
+    width: 150px; 
+  }
+
+  ._cont ._bottom  ._ribbon div span {
+    margin-top: -25px;
+    font-size: 24px;
+    width: 100px;
+}
+ 
+
+  ._cont ._bottom ._date-box ._item, ._cont ._bottom ._signature-box ._item {
+      font-size: 18px;
+  }
+  
+  ._cont ._bottom ._date-box ._date, ._cont ._bottom ._signature-box ._signature {
+      font-size: 18px;
+      letter-spacing: 2px;
+      width: 120px;
+  }
+
+}
+
+@media screen and (max-width: 440px) {
+
+    ._cont {
+        background: #EDEDED url("._._/assets/background-sm._svg") no-repeat;
+        background-position: bottom;
+      }
+
+    ._cont {
+        padding: 15px 0;
+    }
+   
+    ._cont ._heading h1 {
+        font-size: 38px;
+        margin-top: 20px;
+     
+    }
+  
+    ._cont ._heading p {
+      font-size: 19px;
+      letter-spacing: 1px;
+  }
+     
+  ._cont ._name {
+      font-size: 50px;
+  }
+
+  ._cont ._info p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+  
+  
+  
+  ._cont ._description p {
+      font-size: 16px;
+      padding: 0 15px;
+  }
+  
+  ._cont ._bottom  ._ribbon {
+      height: 125px;
+      width: 125px;
+      padding: 0 20px;
+  }
+
+  ._cont ._bottom  ._ribbon div span {
+    margin-top: -22px;
+    font-size: 23px;
+}
+ 
+
+  ._cont ._bottom ._date-box ._item, ._cont ._bottom ._signature-box ._item {
+      font-size: 16px;
+  }
+  
+  ._cont ._bottom ._date-box ._date, ._cont ._bottom ._signature-box ._signature {
+      font-size: 16px;
+      letter-spacing: 1px;
+      width: 100px;
+  }
+
+}
+
+
+@media screen and (min-height: 650px ) {
+    ._cont {
+        background: #EDEDED url("._._/assets/background._svg") no-repeat;
+        background-position: bottom;
+      }
+    
+     
+}
+
+@media screen and (max-width: 365px) {
+    
+    ._cont {
+        background: #EDEDED url("._._/assets/background-sm._svg") no-repeat;
+        background-position: bottom;
+      }
+
+    ._cont ._box {
+        padding: 10px 7px;
+
+      }
+   
+    ._cont ._heading h1 {
+        font-size: 38px;
+        margin-top: 15px;
+     
+    }
+  
+    ._cont ._heading p {
+      font-size: 19px;
+      letter-spacing: 1px;
+  }
+     
+  ._cont ._name {
+      font-size: 50px;
+  }
+
+  ._cont ._info p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+  
+  
+  
+  ._cont ._description p {
+      font-size: 15px;
+      padding: 0 15px;
+  }
+  
+   ._ribbon-svg {
+    height: 125px;
+    width: 125px; 
+    padding: 0 20px;
+  }
+
+  ._cont ._bottom  ._ribbon div span {
+    margin-top: -19px;
+    font-size: 18px;
+    width: 75px;
+}
+ 
+
+  ._cont ._bottom ._date-box ._item, ._cont ._bottom ._signature-box ._item {
+      font-size: 16px;
+  }
+  
+  ._cont ._bottom ._date-box ._date, ._cont ._bottom ._signature-box ._signature {
+      font-size: 16px;
+      letter-spacing: 1px;
+      width: 100px;
+  }
+* {
+   outline: 1px dashed green;
+}    
+}
+
+
+  */
